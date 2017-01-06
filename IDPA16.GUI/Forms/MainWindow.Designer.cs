@@ -1,4 +1,4 @@
-﻿namespace IDPA16.GUI
+﻿namespace IDPA16.GUI.Forms
 {
   partial class MainWindow
   {
@@ -28,20 +28,35 @@
     /// </summary>
     private void InitializeComponent()
     {
+      this.lblGithub = new System.Windows.Forms.LinkLabel();
       this.SuspendLayout();
+      // 
+      // lblGithub
+      // 
+      this.lblGithub.AutoSize = true;
+      this.lblGithub.Location = new System.Drawing.Point(319, 9);
+      this.lblGithub.Name = "lblGithub";
+      this.lblGithub.Size = new System.Drawing.Size(38, 13);
+      this.lblGithub.TabIndex = 0;
+      this.lblGithub.TabStop = true;
+      this.lblGithub.Text = "Github";
       // 
       // MainWindow
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(284, 261);
+      this.ClientSize = new System.Drawing.Size(369, 247);
+      this.Controls.Add(this.lblGithub);
       this.Name = "MainWindow";
       this.Text = "IDPA16";
       this.ResumeLayout(false);
+      this.PerformLayout();
 
     }
 
     #endregion
+
+    private System.Windows.Forms.LinkLabel lblGithub;
   }
 }
 
